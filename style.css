@@ -1,0 +1,159 @@
+
+body{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #E0E8FF;
+}
+
+
+.container{
+    height: 100vh;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+   
+  
+}
+
+.card{
+
+    width: fit-content;
+    height: fit-content;
+   
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  
+}
+
+.card img{
+    border-radius: 12px 12px 0 0;
+    height: auto;
+    width: 100%;
+
+   
+
+    
+}
+
+.content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary{
+    text-align: center;
+}
+
+.summary h2{
+    font-family: "Red Hat Display";
+    font-weight: 900;
+}
+
+.summary p{
+    font-family: "Red Hat Display";
+    font-weight: 400;
+    max-width: 300px;
+    word-wrap: break-word;
+    
+}
+
+.annual_pack{
+    display: flex;
+    background-color: #F8F9FD;
+    padding: 12px;
+    border-radius: 1rem;
+    
+
+    
+}
+
+.annual_packimg{
+    width: 50px;
+    height: 50px;
+}
+
+.plan{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+    margin-left: 8px;
+
+}
+.plan p{
+    margin: 0;
+    color: #747678;
+    font-family: "Red Hat Display";
+    font-weight: 400;
+}
+.plan h4{
+    margin: 0;
+    width: max-content;
+    font-family: "Red Hat Display";
+    font-weight: 700;
+}
+
+.annual_pack a{
+    justify-content: end;
+  
+    text-decoration: none;
+    color:#5242cd; 
+    margin-left: 60px;
+    margin-top: 10px;
+    text-transform: lowercase;
+}
+
+.card button{
+    width: 80%;
+    background-color: blue;
+    justify-content: center;
+    padding: 8px 16px;
+    color: white;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(49, 42, 60, 0.1);
+}
+
+.cancel{
+    margin-top: 30px;
+    font-family: "Red Hat Display";
+    font-weight: 400;
+}
+
+@media (max-width: 700px) {
+    .card {
+        width: 90%;
+    }
+
+    .summary p {
+        max-width: 100%;
+    }
+
+    .annual_pack {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .annual_pack a {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .card button {
+        width: 100%;
+    }
+}
